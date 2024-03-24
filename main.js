@@ -5,7 +5,12 @@ for (var i = 0; i < cohortOneStudents.length; i++) {
 }
 
 const interests = ["Reading", "Cooking", "Cosplay", "Drawing", "Writing"];
+const favoriteInterest = ["Writing"]
 
 for (let i = 0; i < interests.length; i++) {
-    console.log(`One of my interests is: ${interests[i]}.`);
+    if (interests[i] == favoriteInterest) {
+        console.log(`My absolute favorite interest is: ${interests[i]}.`);
+    } else {
+        console.log(`One of my interests is: ${interests[i]}.`);
+    }
 }
